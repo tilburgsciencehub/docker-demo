@@ -19,4 +19,4 @@ RUN pip3 install -r src/requirements.txt
 RUN Rscript src/packages.R
 
 # Run commands specified in "instruction.sh" to get started
-ENTRYPOINT ["sh", "src/instruction.sh"]
+ENTRYPOINT ["sh", "src/run.sh"]
