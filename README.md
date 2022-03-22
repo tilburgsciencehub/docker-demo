@@ -1,6 +1,6 @@
-# Docker demo for Empirical Research Projects
+# Reproducible Docker Workflow for Empirical Research Projects
 
-This is an example repository for the docker tutorial for empirical research using R and Python, available at https://tilburgsciencehub.com/use/docker.
+This is an example repository for the reproducible docker workflow tutorial, available at [Tilburg Science Hub](https://tilburgsciencehub.com/use/docker).
 
 ## Running instructions
 
@@ -12,4 +12,4 @@ This is an example repository for the docker tutorial for empirical research usi
 
 Warning: Usually, you could run docker containers simply by using `docker run`. However, without the argument `-v`, the docker image will not be able to save any of the generated files (e.g., datasets, analysis output) on the computer.
 
-[__Follow the Docker tutorial for empirical research projects on Tilburg Science Hub now.__](https://tilburgsciencehub.com/setup/docker)
+[__Follow the Docker tutorial for empirical research projects on Tilburg Science Hub now.__](https://tilburgsciencehub.com/use/docker)
