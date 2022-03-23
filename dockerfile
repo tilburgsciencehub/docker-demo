@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends build-essential
 RUN ln -s /usr/bin/python3 /usr/bin/python
 
 # Set container's working directory
-WORKDIR /docker_rpy
+WORKDIR /docker-demo
 
 # Copy files and directory structure to working directory
 COPY . .
@@ -19,4 +19,4 @@ RUN pip3 install -r src/requirements.txt
 RUN Rscript src/packages.R
 
 # Run commands specified in "instruction.sh" to get started
-ENTRYPOINT ["sh", "src/run.sh"]
+ENTRYPOINT ["run.sh", "src/run.sh"]
