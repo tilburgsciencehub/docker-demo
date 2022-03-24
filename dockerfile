@@ -18,5 +18,5 @@ COPY . .
 RUN pip3 install -r src/requirements.txt
 RUN Rscript src/packages.R
 
-# Run commands specified in "instruction.sh" to get started
+# Run commands specified in "run.sh" to get started
 ENTRYPOINT ["sh", "src/run.sh"]
