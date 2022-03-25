@@ -15,7 +15,7 @@ WORKDIR /docker_rpy
 COPY . .
 
 # Install necessary packages for Python and R
-RUN pip3 install -r src/requirements.txt
+RUN pip3 install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host=files.pythonhosted.org --no-cache-dir -r src/requirements.txt
 RUN Rscript src/packages.R
 
 # Run commands specified in "run.sh" to get started
